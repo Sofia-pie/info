@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розумне Схуднення: Скинь вагу НАЗАВЖДИ</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f4fbf7',
+                            100: '#e3f6ed',
+                            500: '#10b981', // Emerald primary
+                            600: '#059669',
+                            800: '#065f46',
+                            rose: '#fda4af',
+                            dark: '#0f172a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & Lucide Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen selection:bg-brand-100 selection:text-brand-800">
+
+    <!-- TOP HEADER / BANNER -->
+    <header class="relative bg-gradient-to-r from-brand-800 via-brand-600 to-emerald-800 text-white overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518481612222-68bbe828ecd1?auto=format&fit=crop&q=80&w=1200')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+        
+        <div class="max-w-6xl mx-auto px-4 py-12 sm:py-20 relative z-10">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/20 backdrop-blur-md text-white mb-6">
+                <span class="w-2 h-2 rounded-full bg-brand-rose animate-pulse"></span>
+                Посібник для стійкого результату
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight max-w-4xl">
+                Як скинути вагу й <span class="text-brand-rose underline decoration-2">НІКОЛИ</span> не набрати її знову
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-brand-100 max-w-2xl leading-relaxed">
+                Забудьте про голодні дієти по 1200 ккал. Навчіться працювати зі своїм метаболізмом за допомогою наукового підходу 4-х етапів та гнучкого контролю калорій.
+            </p>
+            
+            <div class="mt-10 flex flex-wrap gap-4">
+                <a href="#four-stages" class="px-6 py-3 bg-white text-brand-800 font-semibold rounded-xl shadow-lg hover:bg-brand-50 transition-all duration-200 flex items-center gap-2">
+                    <i data-lucide="compass" class="w-5 h-5"></i> Читати про 4 етапи
+                </a>
+                <a href="#calorie-calculator" class="px-6 py-3 bg-brand-rose text-slate-900 font-semibold rounded-xl shadow-lg hover:bg-rose-300 transition-all duration-200 flex items-center gap-2">
+                    <i data-lucide="calculator" class="w-5 h-5"></i> Калькулятор калорій
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CORE STRATEGY CALLOUT -->
+    <section class="max-w-6xl mx-auto px-4 -mt-8 relative z-20">
+        <div class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 grid grid-cols-1 md:grid-cols-3 gap-6 border border-slate-100">
+            <div class="flex gap-4 items-start">
+                <div class="p-3 bg-amber-50 text-amber-600 rounded-xl">
+                    <i data-lucide="alert-triangle" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-900">Калорії — це Король</h3>
+                    <p class="text-slate-600 text-sm mt-1">
+                        Закон збереження енергії не обійти. Для схуднення потрібен дефіцит енергії, але він має бути помірним.
+                    </p>
+                </div>
+            </div>
+            <div class="flex gap-4 items-start">
+                <div class="p-3 bg-rose-50 text-rose-500 rounded-xl">
+                    <i data-lucide="crown" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-900">Білок — це Королева</h3>
+                    <p class="text-slate-600 text-sm mt-1">
+                        Білок зберігає ваші м'язи під час дефіциту, прискорює метаболізм та надовго дарує відчуття ситості.
+                    </p>
+                </div>
+            </div>
+            <div class="flex gap-4 items-start">
+                <div class="p-3 bg-brand-100 text-brand-600 rounded-xl">
+                    <i data-lucide="refresh-cw" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-900">Гнучкість — це Ключ</h3>
+                    <p class="text-slate-600 text-sm mt-1">
+                        Дієта закінчується зривом лише тоді, коли вона занадто сувора. Дозволяйте собі улюблені страви в межах калорійності.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT BLOCK -->
+    <main class="max-w-6xl mx-auto px-4 py-12 space-y-16">
+
+        <!-- THE 4 STAGES SECTION -->
+        <section id="four-stages" class="space-y-8">
+            <div class="text-center max-w-3xl mx-auto space-y-3">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Секретна формула: 4 етапи схуднення
+                </h2>
+                <p class="text-slate-600">
+                    Більшість людей одразу кидаються в жорсткі обмеження, зриваються й набирають ще більше. Цей науковий підхід вчить ваш метаболізм адаптуватися, запобігаючи плато.
+                </p>
+            </div>
+
+            <!-- Stage Timeline Overview Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 relative">
+                
+                <!-- STAGE 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 relative overflow-hidden transition-all duration-300 hover:shadow-md hover:-translate-y-1 group">
+                    <div class="absolute top-0 left-0 w-full h-1.5 bg-sky-400"></div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="px-2.5 py-1 text-xs font-bold text-sky-700 bg-sky-50 rounded-md">ЕТАП 1</span>
+                        <span class="text-xs text-slate-400 font-medium">2–4 тижні</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-sky-600 transition-colors">Початкова Підтримка</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        <strong>Знайдіть свій баланс.</strong> Замість дефіциту почніть з їжі на рівні утримання ваги. Тренуйтеся фіксувати все, що їсте, без тиску обмежень.
+                    </p>
+                    <div class="border-t border-slate-50 pt-3 space-y-1.5">
+                        <div class="flex items-center gap-2 text-xs text-slate-500">
+                            <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
+                            <span>Адаптація до трекінгу</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs text-slate-500">
+                            <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
+                            <span>Стабілізація гормонів голоду</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STAGE 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 relative overflow-hidden transition-all duration-300 hover:shadow-md hover:-translate-y-1 group">
+                    <div class="absolute top-0 left-0 w-full h-1.5 bg-brand-500"></div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="px-2.5 py-1 text-xs font-bold text-brand-800 bg-brand-100 rounded-md">ЕТАП 2</span>
+                        <span class="text-xs text-slate-400 font-medium">8–12 тижнів</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition-colors">Розумний Дефіцит</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        <strong>Активне схуднення.</strong> Створення дефіциту в 15-20% від підтримки. Пріоритет на цільні продукти та високий рівень білка (до 1.2–1.5 г на кг маси тіла).
+                    </p>
+                    <div class="border-t border-slate-50 pt-3 space-y-1.5">
+                        <div class="flex items-center gap-2 text-xs text-slate-500">
+                            <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
+                            <span>Планомірна втрата жиру</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs text-slate-500">
+                            <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
+                            <span>Збереження м'язової маси</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STAGE 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 relative overflow-hidden transition-all duration-300 hover:shadow-md hover:-translate-y-1 group">
+                    <div class="absolute top-0 left-0 w-full h-1.5 bg-amber-400"></div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="px-2.5 py-1 text-xs font-bold text-amber-800 bg-amber-50 rounded-md">ЕТАП 3</span>
+                        <span class="text-xs text-slate-400 font-medium">1–2 тижні</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-amber-600 transition-colors">Перерва в Дієті</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        <strong>Дієтична пауза.</strong> Тимчасове повернення калорійності до рівня підтримки. Це перезапускає ваш метаболізм та знижує психологічну втому.
+                    </p>
+                    <div class="border-t border-slate-50 pt-3 space-y-1.5">
+                        <div class="flex items-center gap-2 text-xs text-slate-500">
+                            <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
+                            <span>Зниження стресу (кортизолу)</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs text-slate-500">
+                            <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
+                            <span>Прорив плато ваги</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STAGE 4 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 relative overflow-hidden transition-all duration-300 hover:shadow-md hover:-translate-y-1 group">
+                    <div class="absolute top-0 left-0 w-full h-1.5 bg-rose-400"></div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="px-2.5 py-1 text-xs font-bold text-rose-800 bg-rose-50 rounded-md">ЕТАП 4</span>
+                        <span class="text-xs text-slate-400 font-medium">Назавжди</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-rose-600 transition-colors">Реверсивна Дієта</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        <strong>Утримання ваги.</strong> Повільне, але стабільне підвищення калорій до нової, здорової норми. Ваш метаболізм відновлюється, а вага залишається стабільною.
+                    </p>
+                    <div class="border-t border-slate-50 pt-3 space-y-1.5">
+                        <div class="flex items-center gap-2 text-xs text-slate-500">
+                            <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
+                            <span>Життя без вічних дієт</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs text-slate-500">
+                            <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
+                            <span>Повна свобода вибору страв</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- INTERACTIVE STAGE DEEP DIVE SECTION -->
+            <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-100 space-y-8 mt-12">
+                <div class="border-b border-slate-100 pb-6">
+                    <div class="flex items-center gap-3 text-emerald-600 mb-2">
+                        <i data-lucide="book-open" class="w-6 h-6"></i>
+                        <span class="text-xs font-bold uppercase tracking-wider">Експертний розбір</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                        Глибоке занурення: Детальна інструкція до кожного етапу
+                    </h2>
+                    <p class="text-slate-600 mt-2">
+                        Дізнайтеся точні біологічні механізми, алгоритми дій та практичні лайфхаки для кожного кроку нашої системи. Клікніть на вкладки нижче, щоб відкрити повну інструкцію.
+                    </p>
+                </div>
+
+                <!-- Interactive Tab Controls -->
+                <div class="flex flex-wrap gap-2 border-b border-slate-100 pb-4">
+                    <button onclick="switchStageTab(1)" id="tab-btn-1" class="flex-1 min-w-[150px] px-4 py-3 rounded-xl font-bold text-sm text-left transition-all duration-200 border-2 border-sky-100 bg-sky-50/50 text-sky-800 flex items-center gap-2 shadow-sm">
+                        <span class="w-6 h-6 rounded-full bg-sky-500 text-white flex items-center justify-center text-xs">1</span>
+                        Початкова Підтримка
+                    </button>
+                    <button onclick="switchStageTab(2)" id="tab-btn-2" class="flex-1 min-w-[150px] px-4 py-3 rounded-xl font-bold text-sm text-left transition-all duration-200 border border-transparent bg-slate-50 text-slate-600 hover:bg-slate-100 flex items-center gap-2">
+                        <span class="w-6 h-6 rounded-full bg-slate-400 text-white flex items-center justify-center text-xs">2</span>
+                        Розумний Дефіцит
+                    </button>
+                    <button onclick="switchStageTab(3)" id="tab-btn-3" class="flex-1 min-w-[150px] px-4 py-3 rounded-xl font-bold text-sm text-left transition-all duration-200 border border-transparent bg-slate-50 text-slate-600 hover:bg-slate-100 flex items-center gap-2">
+                        <span class="w-6 h-6 rounded-full bg-slate-400 text-white flex items-center justify-center text-xs">3</span>
+                        Перерва в Дієті
+                    </button>
+                    <button onclick="switchStageTab(4)" id="tab-btn-4" class="flex-1 min-w-[150px] px-4 py-3 rounded-xl font-bold text-sm text-left transition-all duration-200 border border-transparent bg-slate-50 text-slate-600 hover:bg-slate-100 flex items-center gap-2">
+                        <span class="w-6 h-6 rounded-full bg-slate-400 text-white flex items-center justify-center text-xs">4</span>
+                        Реверсивна Дієта
+                    </button>
+                </div>
+
+                <!-- Tab Contents -->
+                <div class="space-y-6">
+                    
+                    <!-- TAB 1 CONTENT: INITIAL MAINTENANCE -->
+                    <div id="tab-content-1" class="space-y-6 animate-fade-in">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                            <div class="lg:col-span-8 space-y-4">
+                                <h3 class="text-2xl font-extrabold text-sky-950 flex items-center gap-2">
+                                    <span class="text-sky-500">Етап 1:</span> Налаштування та початкова підтримка (2-4 тижні)
+                                </h3>
+                                <p class="text-slate-600 leading-relaxed text-sm">
+                                    Більшість невдач у схудненні стаються через занадто різкий старт. Організм сприймає різке урізання калорій до 1200 як загрозу виживанню та вмикає захисні механізми (підвищення кортизолу, шалений голод). На Етапі 1 ми робимо протилежне — ми вчимося жити у балансі.
+                                </p>
+                                <p class="text-slate-600 leading-relaxed text-sm">
+                                    <strong>Головне завдання:</strong> з'ясувати вашу реальну калорійність підтримки (кількість енергії, при якій вага не змінюється) та адаптуватися до ведення харчового щоденника без обмежень. Це психологічний «буфер», який знімає страх перед дієтою.
+                                </p>
+                                
+                                <div class="bg-sky-50 rounded-2xl p-5 border border-sky-100 space-y-3">
+                                    <h4 class="font-bold text-sky-900 text-sm flex items-center gap-2">
+                                        <i data-lucide="activity" class="w-4 h-4"></i> Чому цей крок обов'язковий?
+                                    </h4>
+                                    <ul class="list-disc list-inside text-xs text-sky-900 space-y-1.5 leading-relaxed">
+                                        <li><strong>Нормалізація гормонів:</strong> Рівні лептину (гормону ситості) та греліну (гормону голоду) стабілізуються, зменшуючи потяг до солодкого.</li>
+                                        <li><strong>Створення бази даних:</strong> Ви дізнаєтеся свій справжній рівень метаболізму, а не приблизну цифру з інтернет-калькуляторів.</li>
+                                        <li><strong>Звикання без стресу:</strong> Зважувати їжу набагато простіше, коли ви знаєте, що вам можна їсти абсолютно все в межах норми.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="lg:col-span-4 bg-slate-50 rounded-2xl p-5 border border-slate-100 space-y-4">
+                                <h4 class="font-bold text-slate-900 text-sm border-b border-slate-200 pb-2">Чек-лист дій (Етап 1)</h4>
+                                <ul class="space-y-3">
+                                    <li class="flex gap-2 items-start text-xs text-slate-600">
+                                        <i data-lucide="check-square" class="w-4 h-4 text-sky-500 shrink-0 mt-0.5"></i>
+                                        <span>Зважувати та вносити в трекер 100% їжі щодня (навіть каву з молоком та перекуси).</span>
+                                    </li>
+                                    <li class="flex gap-2 items-start text-xs text-slate-600">
+                                        <i data-lucide="check-square" class="w-4 h-4 text-sky-500 shrink-0 mt-0.5"></i>
+                                        <span>Зберігати калорійність на рівні вашої поточної підтримки (зазвичай 1900–2200 ккал для жінок вагою 90-95кг).</span>
+                                    </li>
+                                    <li class="flex gap-2 items-start text-xs text-slate-600">
+                                        <i data-lucide="check-square" class="w-4 h-4 text-sky-500 shrink-0 mt-0.5"></i>
+                                        <span>Зважуватися щодня вранці натщесерце, щоб відстежити середній тижневий тренд ваги.</span>
+                                    </li>
+                                    <li class="flex gap-2 items-start text-xs text-slate-600">
+                                        <i data-lucide="check-square" class="w-4 h-4 text-sky-500 shrink-0 mt-0.5"></i>
+                                        <span>Не намагатися схуднути на цьому етапі. Стабільна вага — це перемога!</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 2 CONTENT: ACTIVE DEFICIT -->
+                    <div id="tab-content-2" class="space-y-6 hidden animate-fade-in">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                            <div class="lg:col-span-8 space-y-4">
+                                <h3 class="text-2xl font-extrabold text-brand-900 flex items-center gap-2">
+                                    <span class="text-brand-500">Етап 2:</span> Розумний дефіцит та активне жироспалювання (8-12 тижнів)
+                                </h3>
+                                <p class="text-slate-600 leading-relaxed text-sm">
+                                    Це фаза, де відбувається безпосередня магія схуднення. Маючи чіткі дані про вашу калорійність підтримки з першого етапу, мы створюємо плавний, безпечний дефіцит енергії в розмірі 15–20% (зазвичай це мінус 300–400 ккал від норми).
+                                </p>
+                                <p class="text-slate-600 leading-relaxed text-sm">
+                                    <strong>Головне завдання:</strong> знижувати відсоток жиру в організмі, зберігаючи при цьому м'язову тканину та високу працездатність. Для цього критично важливо споживати достатню кількість білка та підтримувати побутову активність (кроки).
+                                </p>
+                                
+                                <div class="bg-brand-50 rounded-2xl p-5 border border-brand-100 space-y-3">
+                                    <h4 class="font-bold text-brand-900 text-sm flex items-center gap-2">
+                                        <i data-lucide="shield-check" class="w-4 h-4"></i> Золоті правила Етапу 2
+                                    </h4>
+                                    <ul class="list-disc list-inside text-xs text-brand-900 space-y-1.5 leading-relaxed">
+                                        <li><strong>Білок — королева дієти:</strong> Намагайтеся отримувати близько 1.2–1.5 грама якісного білка на кілограм маси тіла (якщо ваша вага понад 90 кг, орієнтуйтеся на 110–130 г білка на день). Це збереже м'язи та метаболізм.</li>
+                                        <li><strong>Правило 80/20:</strong> 80% вашого раціону повинні складати цільні, необроблені продукти (овочі, м'ясо, крупи, яйця, корисні жири). 20% калорій залиште на улюблені солодощі, фрукти чи перекуси, щоб уникнути психологічного тиску.</li>
+                                        <li><strong>Не забувайте про кроки:</strong> Організм намагатиметься компенсувати дефіцит, роблячи вас лінивими. Намагайтеся тримати стабільні 8,000–10,000 кроків на день.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="lg:col-span-4 bg-slate-50 rounded-2xl p-5 border border-slate-100 space-y-4">
+                                <h4 class="font-bold text-slate-900 text-sm border-b border-slate-200 pb-2">Чек-лист дій (Етап 2)</h4>
+                                <ul class="space-y-3">
+                                    <li class="flex gap-2 items-start text-xs text-slate-600">
+                                        <i data-lucide="check-square" class="w-4 h-4 text-brand-500 shrink-0 mt-0.5"></i>
+                                        <span>Створити дефіцит 15-20% та суворо дотримуватися щоденного або тижневого бюджету калорій.</span>
+                                    </li>
+                                    <li class="flex gap-2 items-start text-xs text-slate-600">
+                                        <i data-lucide="check-square" class="w-4 h-4 text-brand-500 shrink-0 mt-0.5"></i>
+                                        <span>Контролювати споживання білка (яйця, птиця, риба, сир, бобові).</span>
+                                    </li>
+                                    <li class="flex gap-2 items-start text-xs text-slate-600">
+                                        <i data-lucide="check-square" class="w-4 h-4 text-brand-500 shrink-0 mt-0.5"></i>
+                                        <span>Додати 2-3 силові тренування на тиждень (вдома з гантелями або в залі) для тонусу м'язів.</span>
+                                    </li>
+                                    <li class="flex gap-2 items-start text-xs text-slate-600">
+                                        <i data-lucide="check-square" class="w-4 h-4 text-brand-500 shrink-0 mt-0.5"></i>
+                                        <span>Стежити за сном: дефіцит сну підвищує тягу до швидких вуглеводів на 30-40%.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 3 CONTENT: DIET BREAK -->
+                    <div id="tab-content-3" class="space-y-6 hidden animate-fade-in">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                            <div class="lg:col-span-8 space-y-4">
+                                <h3 class="text-2xl font-extrabold text-amber-950 flex items-center gap-2">
+                                    <span class="text-amber-500">Етап 3:</span> Планова перерва в дієті (1-2 тижні)
+                                </h3>
+                                <p class="text-slate-600 leading-relaxed text-sm">
+                                    Коли ви перебуваєте у дефіциті понад 8–10 тижнів, ваше тіло починає адаптуватися: сповільнюється щитоподібна залоза, падає рівень активності (NEAT), знижується швидкість обміну речовин. Ви починаєте відчувати млявість, а втрата ваги може повністю зупинитися (плато).
+                                </p>
+                                <p class="text-slate-600 leading-relaxed text-sm">
+                                    <strong>Головне завдання:</strong> тимчасово підняти калорійність раціону до рівня вашої нової підтримки на 7-14 днів. Це НЕ період безконтрольного переїдання (обжираловки), а контрольоване збільшення порцій за рахунок складних вуглеводів та здорових жирів.
+                                </p>
+                                
+                                <div class="bg-amber-50 rounded-2xl p-5 border border-amber-100 space-y-3">
+                                    <h4 class="font-bold text-amber-900 text-sm flex items-center gap-2">
+                                        <i data-lucide="refresh-cw" class="w-4 h-4"></i> Чому перерва прискорює схуднення?
+                                    </h4>
+                                    <ul class="list-disc list-inside text-xs text-amber-900 space-y-1.5 leading-relaxed">
+                                        <li><strong>Метаболічний перезапуск:</strong> Організм розуміє, що "голоду" немає, і відновлює швидкість обміну речовин.</li>
+                                        <li><strong>Гормональний баланс:</strong> Рівень гормону стресу (кортизолу), який затримує воду, різко падає. Саме тому після перерви люди часто прокидаються на кілька кілограмів легшими!</li>
+                                        <li><strong>Психологічне розвантаження:</strong> Можливість поїсти трохи більше та відпочити від постійного відчуття обмеження запобігає глибокому вигоранню.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="lg:col-span-4 bg-slate-50 rounded-2xl p-5 border border-slate-100 space-y-4">
+                                <h4 class="font-bold text-slate-900 text-sm border-b border-slate-200 pb-2">Чек-лист дій (Етап 3)</h4>
+                                <ul class="space-y-3">
+                                    <li class="flex gap-2 items-start text-xs text-slate-600">
+                                        <i data-lucide="check-square" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                                        <span>Повернути калорії до поточної норми підтримки (додати приблизно 300–400 ккал на день).</span>
+                                    </li>
+                                    <li class="flex gap-2 items-start text-xs text-slate-600">
+                                        <i data-lucide="check-square" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                                        <span>Продовжувати зважувати їжу та вносити дані в додаток. Дисципліна зберігається!</span>
+                                    </li>
+                                    <li class="flex gap-2 items-start text-xs text-slate-600">
+                                        <i data-lucide="check-square" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                                        <span>Не панікувати через невеликі коливання ваги (+1 кг води через глікоген — це норма).</span>
+                                    </li>
+                                    <li class="flex gap-2 items-start text-xs text-slate-600">
+                                        <i data-lucide="check-square" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                                        <span>Після завершення перерви повернутися до Етапу 2 (якщо мета ще не досягнута).</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 4 CONTENT: REVERSE DIET -->
+                    <div id="tab-content-4" class="space-y-6 hidden animate-fade-in">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                            <div class="lg:col-span-8 space-y-4">
+                                <h3 class="text-2xl font-extrabold text-rose-950 flex items-center gap-2">
+                                    <span class="text-rose-500">Етап 4:</span> Реверсивна дієта та вихід на новий метаболізм (Назавжди)
+                                </h3>
+                                <p class="text-slate-600 leading-relaxed text-sm">
+                                    Найбільша трагедія схуднення — це швидке повернення ваги після закінчення дієти (ефект йо-йо). Організм з пригніченим під час дієти метаболізмом не готовий до різкого повернення до старих обсягів їжі. Будь-який надлишок калорій моментально відкладається у жирові депо.
+                                </p>
+                                <p class="text-slate-600 leading-relaxed text-sm">
+                                    <strong>Головне завдання:</strong> повільно та контрольовано розігнати ваш метаболізм. Ми робимо це шляхом щотижневого додавання крихітної кількості калорій. Ваша вага залишається стабільною, але ви можете їсти значно більше.
+                                </p>
+                                
+                                <div class="bg-rose-50 rounded-2xl p-5 border border-rose-100 space-y-3">
+                                    <h4 class="font-bold text-rose-900 text-sm flex items-center gap-2">
+                                        <i data-lucide="check-circle" class="w-4 h-4"></i> Як працює реверсивна дієта?
+                                    </h4>
+                                    <ul class="list-disc list-inside text-xs text-rose-900 space-y-1.5 leading-relaxed">
+                                        <li><strong>Крок за кроком:</strong> Закінчивши дефіцит, наприклад на 1500 ккал, ви додаєте 50–100 ккал на день протягом наступного тижня (переходите на 1600 ккал). Стежте за вагою.</li>
+                                        <li><strong>Метаболічна адаптація:</strong> Тіло використовує ці додаткові калорії на збільшення несвідомої активності (ви стаєте рухливішими, бадьорішими), не запасаючи їх у жир.</li>
+                                        <li><strong>Результат:</strong> За кілька місяців ви виходите на калорійність підтримки у 2000–2200 ккал щодня, зберігаючи свою нову струнку фігуру на все життя!</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="lg:col-span-4 bg-slate-50 rounded-2xl p-5 border border-slate-100 space-y-4">
+                                <h4 class="font-bold text-slate-900 text-sm border-b border-slate-200 pb-2">Чек-лист дій (Етап 4)</h4>
+                                <ul class="space-y-3">
+                                    <li class="flex gap-2 items-start text-xs text-slate-600">
+                                        <i data-lucide="check-square" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
+                                        <span>Додавати по 50-100 ккал до денної норми кожні 1-2 тижні.</span>
+                                    </li>
+                                    <li class="flex gap-2 items-start text-xs text-slate-600">
+                                        <i data-lucide="check-square" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
+                                        <span>Якщо середня вага за тиждень не росте або навіть падає — продовжувати плавне підвищення.</span>
+                                    </li>
+                                    <li class="flex gap-2 items-start text-xs text-slate-600">
+                                        <i data-lucide="check-square" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
+                                        <span>Якщо вага починає рости занадто швидко (понад 0.5 кг за тиждень), зробити зупинку на поточному рівні калорій на 2-3 тижні.</span>
+                                    </li>
+                                    <li class="flex gap-2 items-start text-xs text-slate-600">
+                                        <i data-lucide="check-square" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
+                                        <span>Закріпити нові здорові харчові звички, зробивши збалансоване харчування стилем життя.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW: CALORIES CALCULATOR FOR MAINTENANCE AND WEIGHT LOSS -->
+        <section id="calorie-calculator" class="bg-gradient-to-br from-slate-900 to-brand-dark text-white rounded-3xl p-6 sm:p-10 shadow-xl space-y-8 relative overflow-hidden">
+            <div class="absolute -bottom-24 -left-24 w-72 h-72 rounded-full bg-brand-500/10 blur-3xl"></div>
+            <div class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-brand-rose/10 blur-3xl"></div>
+            
+            <div class="border-b border-white/10 pb-6 relative z-10">
+                <div class="flex items-center gap-3 text-brand-rose mb-2">
+                    <i data-lucide="calculator" class="w-6 h-6"></i>
+                    <span class="text-xs font-bold uppercase tracking-wider">Розрахунок за формулою Міффліна-Джеора</span>
+                </div>
+                <h2 class="text-3xl font-extrabold tracking-tight">Калькулятор індивідуальної норми калорій</h2>
+                <p class="text-slate-300 mt-2 text-sm leading-relaxed max-w-3xl">
+                    Введіть свої персональні дані, щоб дізнатися базовий обмін речовин (<strong class="text-white">BMR</strong>), калорійність для утримання поточної ваги (<strong class="text-white">TDEE</strong>) та індивідуальні норми для безпечного схуднення.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative z-10">
+                <!-- Left: Form Input Column -->
+                <form id="bmr-form" onsubmit="event.preventDefault();" class="lg:col-span-6 bg-white/5 p-6 rounded-2xl border border-white/10 space-y-5">
+                    
+                    <!-- Gender selection (Radio/Buttons) -->
+                    <div class="space-y-2">
+                        <span class="text-xs font-semibold text-slate-300 block">Ваша стать:</span>
+                        <div class="grid grid-cols-2 gap-3">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="gender" value="female" checked class="sr-only peer">
+                                <div class="py-2.5 text-center text-sm font-semibold rounded-xl border border-white/20 bg-transparent text-slate-300 hover:bg-white/5 peer-checked:bg-brand-rose peer-checked:border-brand-rose peer-checked:text-slate-950 transition-all duration-200">
+                                    👩 Жінка
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="gender" value="male" class="sr-only peer">
+                                <div class="py-2.5 text-center text-sm font-semibold rounded-xl border border-white/20 bg-transparent text-slate-300 hover:bg-white/5 peer-checked:bg-brand-rose peer-checked:border-brand-rose peer-checked:text-slate-950 transition-all duration-200">
+                                    👨 Чоловік
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Row for Weight, Height, Age -->
+                    <div class="grid grid-cols-3 gap-3">
+                        <div class="space-y-1.5">
+                            <label for="calc-weight" class="text-xs font-semibold text-slate-300 block">Вага (кг):</label>
+                            <input type="number" id="calc-weight" min="40" max="250" value="95" class="w-full bg-slate-800 border border-white/10 rounded-xl px-3 py-2.5 text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-rose focus:border-transparent">
+                        </div>
+                        <div class="space-y-1.5">
+                            <label for="calc-height" class="text-xs font-semibold text-slate-300 block">Ріст (см):</label>
+                            <input type="number" id="calc-height" min="120" max="220" value="168" class="w-full bg-slate-800 border border-white/10 rounded-xl px-3 py-2.5 text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-rose focus:border-transparent">
+                        </div>
+                        <div class="space-y-1.5">
+                            <label for="calc-age" class="text-xs font-semibold text-slate-300 block">Вік (років):</label>
+                            <input type="number" id="calc-age" min="14" max="99" value="35" class="w-full bg-slate-800 border border-white/10 rounded-xl px-3 py-2.5 text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-rose focus:border-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Activity Level -->
+                    <div class="space-y-1.5">
+                        <label for="calc-activity" class="text-xs font-semibold text-slate-300 block">Рівень фізичної активності:</label>
+                        <select id="calc-activity" class="w-full bg-slate-800 border border-white/10 rounded-xl px-3 py-2.5 text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-rose focus:border-transparent cursor-pointer">
+                            <option value="1.2">Сидячий спосіб (мало / немає тренувань)</option>
+                            <option value="1.375" selected>Легка активність (тренування 1-3 рази/тиж)</option>
+                            <option value="1.55">Помірна активність (тренування 3-5 разів/тиж)</option>
+                            <option value="1.725">Висока активність (спорт щодня / важка праця)</option>
+                            <option value="1.9">Екстремальна активність (професійні атлети)</option>
+                        </select>
+                    </div>
+
+                    <!-- Calculate Button -->
+                    <button onclick="calculateCalories()" class="w-full py-3 bg-brand-rose text-slate-950 font-bold rounded-xl shadow-lg hover:bg-rose-300 transition-all duration-200 flex items-center justify-center gap-2">
+                        <i data-lucide="sparkles" class="w-4 h-4"></i> Розрахувати показники
+                    </button>
+                </form>
+
+                <!-- Right: Detailed Results View -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="bg-white/5 rounded-2xl p-6 border border-white/10 space-y-4">
+                        <h3 class="font-bold text-lg text-brand-rose flex items-center gap-2 border-b border-white/10 pb-3">
+                            <i data-lucide="bar-chart-2" class="w-5 h-5"></i> Ваші результати:
+                        </h3>
+
+                        <div class="space-y-4">
+                            <!-- BMR (Basal Metabolic Rate) -->
+                            <div class="flex justify-between items-center bg-white/5 p-3 rounded-xl border border-white/5">
+                                <div>
+                                    <span class="text-xs text-slate-400 block font-semibold">Базовий метаболізм (BMR):</span>
+                                    <span class="text-xs text-slate-400 leading-relaxed block">Енергія на життєзабезпечення у спокої.</span>
+                                </div>
+                                <span class="text-xl font-extrabold text-sky-400"><span id="res-bmr">1664</span> <span class="text-xs font-normal">ккал</span></span>
+                            </div>
+
+                            <!-- TDEE (Maintenance) -->
+                            <div class="flex justify-between items-center bg-brand-500/10 p-3.5 rounded-xl border border-brand-500/20">
+                                <div>
+                                    <span class="text-xs text-brand-rose block font-bold uppercase tracking-wide">Підтримка ваги (TDEE):</span>
+                                    <span class="text-xs text-slate-300 leading-relaxed block">Добова норма калорій для збереження ваги.</span>
+                                </div>
+                                <span class="text-2xl font-extrabold text-white"><span id="res-tdee">2288</span> <span class="text-sm font-normal">ккал</span></span>
+                            </div>
+
+                            <!-- Target Deficit / Weight Loss -->
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="bg-emerald-500/10 p-3 rounded-xl border border-emerald-500/20">
+                                    <span class="text-[11px] text-emerald-400 block font-bold uppercase">Здорове схуднення</span>
+                                    <span class="text-xs text-slate-400 block mt-1">(помірний дефіцит -15%)</span>
+                                    <span class="text-lg font-bold text-white block mt-2"><span id="res-loss-mild">1945</span> <span class="text-xs font-normal">ккал</span></span>
+                                </div>
+                                <div class="bg-rose-500/10 p-3 rounded-xl border border-rose-500/20">
+                                    <span class="text-[11px] text-brand-rose block font-bold uppercase">Інтенсивне схуднення</span>
+                                    <span class="text-xs text-slate-400 block mt-1">(дефіцит -20%)</span>
+                                    <span class="text-lg font-bold text-white block mt-2"><span id="res-loss-standard">1830</span> <span class="text-xs font-normal">ккал</span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Integration Button -->
+                        <div class="pt-2">
+                            <button onclick="applyToPlanner()" class="w-full py-2.5 bg-white/10 hover:bg-white/20 text-white text-xs font-bold rounded-xl border border-white/10 transition-all duration-200 flex items-center justify-center gap-2">
+                                <i data-lucide="arrow-down-to-line" class="w-4 h-4 text-brand-rose"></i> Перенести розраховані значення у тижневий планувальник
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BEGINNERS CALORIE TRACKING GUIDE -->
+        <section id="tracker-guide" class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-100 space-y-8">
+            <div class="border-b border-slate-100 pb-6">
+                <div class="flex items-center gap-3 text-brand-600 mb-2">
+                    <i data-lucide="info" class="w-6 h-6"></i>
+                    <span class="text-xs font-bold uppercase tracking-wider">Гід для абсолютних новачків</span>
+                </div>
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">
+                    Я ніколи не рахував калорії: З чого почати?
+                </h2>
+                <p class="text-slate-600 mt-2">
+                    Рахувати калорії спочатку здається нудним та складним завданням. Проте це єдиний спосіб отримати реальні дані про те, що потрапляє у ваш організм. Ось прості кроки, щоб зробити цей процес легким і безстресовим.
+                </p>
+            </div>
+
+            <!-- Steps Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center font-bold text-lg">
+                        1
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-lg">Придбайте прості кухонні ваги</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Вам не потрібні дорогі девайси. Достатньо найпростіших електронних ваг із кнопкою скидання тари («Тара» / «Tare»). Зважуйте їжу у сирою/сухому вигляді перед приготуванням — це найбільш точний спосіб.
+                    </p>
+                </div>
+
+                <div class="space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center font-bold text-lg">
+                        2
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-lg">Оберіть безкоштовний додаток</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Встановіть безкоштовну версію MyFitnessPal, FatSecret або Cronometer. Не потрібно купувати преміум-підписки. Базових функцій сканування штрих-кодів та ручного пошуку страв цілком достатньо.
+                    </p>
+                </div>
+
+                <div class="space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center font-bold text-lg">
+                        3
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-lg">Правило «Запиши перед тим, як вкусити»</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Зробіть звичкою вносити продукти в додаток до того, як почнете їсти. Це захистить вас від неочікуваного виходу за межі норми та допоможе краще планувати свій день.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Advanced Beginners Tips (Collapsible FAQs Style) -->
+            <div class="bg-slate-50 rounded-2xl p-6 space-y-4">
+                <h4 class="font-bold text-slate-900 flex items-center gap-2">
+                    <i data-lucide="help-circle" class="w-5 h-5 text-brand-500"></i>
+                    Як вижити у реальних життєвих ситуаціях?
+                </h4>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-4 rounded-xl border border-slate-100 space-y-2">
+                        <span class="font-semibold text-slate-900 text-sm block">1. Готування на всю родину</span>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Складно порахувати суп чи рагу? Використовуйте функцію «Рецепти» в додатку. Зважте всі сирі інгредієнти, внесіть їх, а готову страву зважте цілком. Додаток автоматично розрахує калорійність вашої порції.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl border border-slate-100 space-y-2">
+                        <span class="font-semibold text-slate-900 text-sm block">2. Вечірки, кафе та ресторани</span>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Не панікуйте! Знайдіть у додатку схожу страву з популярної мережі та оберіть варіант із дещо завищеною калорійністю. Краще помилитися в більшу сторону, ніж вдавати, що ви нічого не з'їли.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl border border-slate-100 space-y-2">
+                        <span class="font-semibold text-slate-900 text-sm block">3. Перекуси «на ходу» та ложка арахісової пасти</span>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Облизана ложка пасти чи пара горішків під час готування можуть містити до 150-200 прихованих калорій! Рахуйте навіть дрібниці — саме вони часто гальмують прогрес.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl border border-slate-100 space-y-2">
+                        <span class="font-semibold text-slate-900 text-sm block">4. Що робити, якщо переїв(ла)?</span>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Ніяких самопокарань! Не намагайтеся відпрацювати їжу на тренуванні чи голодувати наступного дня. Просто зафіксуйте цей день, зробіть висновки та повертайтеся до плану з наступного прийому їжі.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE WEEKLY CALORIE BUDGET CALCULATOR -->
+        <section class="bg-brand-dark text-white rounded-3xl p-6 sm:p-10 relative overflow-hidden space-y-8">
+            <div class="max-w-2xl">
+                <span class="text-brand-rose text-xs font-bold uppercase tracking-wider block mb-2">Гнучкий підхід: Тижневий бюджет</span>
+                <h2 class="text-3xl font-extrabold tracking-tight">Інтерактивний планувальник калорій</h2>
+                <p class="text-slate-300 mt-2 text-sm leading-relaxed">
+                    Дієта не повинна руйнувати ваше соціальне життя. Замість щоденного стресу, дивіться на бюджет калорій як на тижневий капітал. Якщо ви хочете дозволити собі піцу чи келих вина у вихідні — просто перерозподіліть калорії протягом тижня!
+                </p>
+            </div>
+
+            <!-- Calculator Workspace -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left Input Panel -->
+                <div class="lg:col-span-5 bg-white/5 rounded-2xl p-6 border border-white/10 space-y-6">
+                    <h3 class="font-bold text-lg text-brand-rose border-b border-white/10 pb-3 flex items-center gap-2">
+                        <i data-lucide="sliders" class="w-5 h-5"></i> Налаштування
+                    </h3>
+                    
+                    <!-- Slider 1: Maintenance -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-slate-300">Ваша підтримка:</span>
+                            <span class="font-bold text-white"><span id="lbl-maintenance">2250</span> ккал</span>
+                        </div>
+                        <input type="range" id="input-maintenance" min="1500" max="3500" step="50" value="2250" class="w-full accent-brand-rose cursor-pointer">
+                        <p class="text-xs text-slate-400">Калорії, необхідні для підтримки поточної ваги.</p>
+                    </div>
+
+                    <!-- Slider 2: Deficit Target -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-slate-300">Цільовий щоденний дефіцит:</span>
+                            <span class="font-bold text-white"><span id="lbl-deficit">400</span> ккал</span>
+                        </div>
+                        <input type="range" id="input-deficit" min="200" max="800" step="50" value="400" class="w-full accent-brand-rose cursor-pointer">
+                        <p class="text-xs text-slate-400">Рекомендовано: 300 - 500 ккал для здорового темпу втрати ваги.</p>
+                    </div>
+
+                    <!-- Toggle Weekend Flex -->
+                    <div class="pt-2">
+                        <label class="flex items-center gap-3 cursor-pointer select-none">
+                            <input type="checkbox" id="chk-weekend-flex" class="sr-only peer" checked>
+                            <div class="w-11 h-6 bg-slate-700 rounded-full peer peer-focus:ring-2 peer-focus:ring-brand-rose peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-brand-rose relative"></div>
+                            <span class="text-sm font-medium text-slate-300">Увімкнути гнучкі вихідні (більше калорій у Сб-Нд)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Right Results Panel -->
+                <div class="lg:col-span-7 bg-white/5 rounded-2xl p-6 border border-white/10 space-y-6">
+                    <h3 class="font-bold text-lg text-brand-rose border-b border-white/10 pb-3 flex items-center gap-2">
+                        <i data-lucide="calendar" class="w-5 h-5"></i> Ваш тижневий розподіл
+                    </h3>
+
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        <div class="bg-white/5 p-3.5 rounded-xl border border-white/5">
+                            <span class="text-xs text-slate-400 block">Тижневий ліміт</span>
+                            <span class="text-xl font-bold text-white"><span id="val-weekly-total">12950</span> <span class="text-xs font-normal">ккал</span></span>
+                        </div>
+                        <div class="bg-white/5 p-3.5 rounded-xl border border-white/5">
+                            <span class="text-xs text-slate-400 block">Середня норма</span>
+                            <span class="text-xl font-bold text-white"><span id="val-daily-avg">1850</span> <span class="text-xs font-normal">/ день</span></span>
+                        </div>
+                        <div class="bg-white/5 p-3.5 rounded-xl border border-white/5 col-span-2 sm:col-span-1">
+                            <span class="text-xs text-slate-400 block">Прогноз втрати ваги</span>
+                            <span class="text-xl font-bold text-brand-rose">~0.4-0.5 <span class="text-xs font-normal">кг/тиждень</span></span>
+                        </div>
+                    </div>
+
+                    <!-- Daily Bars Visualization -->
+                    <div class="space-y-3 pt-2">
+                        <span class="text-xs text-slate-400 block uppercase font-semibold">Розподіл калорій по днях:</span>
+                        
+                        <div class="space-y-2.5">
+                            <!-- Mon-Fri Row -->
+                            <div>
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-slate-300">Будні дні (Пн - Пт)</span>
+                                    <span class="font-bold text-white"><span id="val-weekday-cal">1750</span> ккал / день</span>
+                                </div>
+                                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                                    <div id="bar-weekday" class="bg-brand-500 h-full rounded-full transition-all duration-300" style="width: 77%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Sat-Sun Row -->
+                            <div>
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-slate-300 text-brand-rose">Вихідні (Сб - Нд) — Час для розслаблення!</span>
+                                    <span class="font-bold text-brand-rose"><span id="val-weekend-cal">2100</span> ккал / day</span>
+                                </div>
+                                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                                    <div id="bar-weekend" class="bg-brand-rose h-full rounded-full transition-all duration-300" style="width: 93%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Balance Insight Box -->
+                    <div class="p-4 rounded-xl bg-brand-500/10 border border-brand-500/20 flex gap-3 items-start">
+                        <i data-lucide="sparkles" class="w-5 h-5 text-brand-500 shrink-0 mt-0.5"></i>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            <strong class="text-white">Порада від тренера:</strong> Зверніть увагу, що знизивши калорійність всього на 100 ккал у будні дні, ви звільняєте додаткові 350-400 ккал на вихідні. Це дозволить вам з'їсти улюблену страву в ресторані або піцу з родиною без жодного відчуття провини та зривів!
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- VISUALIZER: HIDDEN CALORIES IN FOODS -->
+        <section class="space-y-8">
+            <div class="text-center max-w-3xl mx-auto space-y-3">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Де ховаються «невидимі» калорії?
+                </h2>
+                <p class="text-slate-600">
+                    Ви можете думати, що харчуєтеся суворо в дефіциті, але дрібні помилки в оцінці страв часто непомітно знищують ваш дефіцит. Клікніть по інгредієнтах, щоб увімкнути підрахунок калорій.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100">
+                
+                <!-- Left: Interactive Food Plate -->
+                <div class="lg:col-span-7 space-y-6">
+                    <h3 class="font-bold text-lg text-slate-900">Звичайний салат з куркою (як ми його бачимо і як рахуємо на око):</h3>
+                    
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                        
+                        <!-- Ingredient 1 -->
+                        <button onclick="toggleIngredient(this, 120)" class="group text-left p-4 rounded-2xl border-2 border-slate-100 bg-slate-50/50 hover:border-emerald-500 hover:bg-emerald-50/20 transition-all duration-200">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-xs font-bold text-slate-500 group-hover:text-emerald-700">М'ясо</span>
+                                <div class="checkbox-indicator w-4 h-4 rounded-full border border-slate-300 flex items-center justify-center bg-white">
+                                    <div class="dot w-2 h-2 rounded-full bg-emerald-500 opacity-0"></div>
+                                </div>
+                            </div>
+                            <span class="font-bold text-sm text-slate-800 block">Куряче філе</span>
+                            <span class="text-xs text-slate-400 block">120г (на грилі)</span>
+                            <span class="text-xs font-semibold text-emerald-600 mt-2 block">+120 ккал</span>
+                        </button>
+
+                        <!-- Ingredient 2 -->
+                        <button onclick="toggleIngredient(this, 30)" class="group text-left p-4 rounded-2xl border-2 border-slate-100 bg-slate-50/50 hover:border-emerald-500 hover:bg-emerald-50/20 transition-all duration-200">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-xs font-bold text-slate-500 group-hover:text-emerald-700">Овочі</span>
+                                <div class="checkbox-indicator w-4 h-4 rounded-full border border-slate-300 flex items-center justify-center bg-white">
+                                    <div class="dot w-2 h-2 rounded-full bg-emerald-500 opacity-0"></div>
+                                </div>
+                            </div>
+                            <span class="font-bold text-sm text-slate-800 block">Овочевий мікс</span>
+                            <span class="text-xs text-slate-400 block">Листя, томати</span>
+                            <span class="text-xs font-semibold text-emerald-600 mt-2 block">+30 ккал</span>
+                        </button>
+
+                        <!-- Ingredient 3 (Trap) -->
+                        <button onclick="toggleIngredient(this, 240)" class="group text-left p-4 rounded-2xl border-2 border-slate-100 bg-slate-50/50 hover:border-rose-500 hover:bg-rose-50/20 transition-all duration-200">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-xs font-bold text-rose-500">Пастка! ⚠️</span>
+                                <div class="checkbox-indicator w-4 h-4 rounded-full border border-slate-300 flex items-center justify-center bg-white">
+                                    <div class="dot w-2 h-2 rounded-full bg-rose-500 opacity-0"></div>
+                                </div>
+                            </div>
+                            <span class="font-bold text-sm text-slate-800 block">Оливкова олія</span>
+                            <span class="text-xs text-slate-400 block">2 ложки «на око»</span>
+                            <span class="text-xs font-semibold text-rose-600 mt-2 block">+240 ккал</span>
+                        </button>
+
+                        <!-- Ingredient 4 (Trap) -->
+                        <button onclick="toggleIngredient(this, 180)" class="group text-left p-4 rounded-2xl border-2 border-slate-100 bg-slate-50/50 hover:border-rose-500 hover:bg-rose-50/20 transition-all duration-200">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-xs font-bold text-rose-500">Пастка! ⚠️</span>
+                                <div class="checkbox-indicator w-4 h-4 rounded-full border border-slate-300 flex items-center justify-center bg-white">
+                                    <div class="dot w-2 h-2 rounded-full bg-rose-500 opacity-0"></div>
+                                </div>
+                            </div>
+                            <span class="font-bold text-sm text-slate-800 block">Сир Пармезан</span>
+                            <span class="text-xs text-slate-400 block">Дрібка «від серця»</span>
+                            <span class="text-xs font-semibold text-rose-600 mt-2 block">+180 ккал</span>
+                        </button>
+
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200 text-amber-800 text-xs leading-relaxed">
+                        <strong>Чому так відбувається?</strong> Куряче філе та салатне листя дуже низькокалорійні — це чудовий вибір. Однак, додаючи оливкову олію та сир без вагів («на око»), ви непомітно збільшили калорійність страви майже втричі, додавши понад 400 неврахованих кілокалорій!
+                    </div>
+                </div>
+
+                <!-- Right: Live Counter Card -->
+                <div class="lg:col-span-5 bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-6 text-center space-y-4">
+                    <span class="text-xs font-bold tracking-wider text-slate-400 uppercase">Поточний підрахунок тарілки</span>
+                    
+                    <div class="py-6">
+                        <span id="txt-total-plate-cal" class="text-5xl sm:text-6xl font-extrabold text-brand-rose">0</span>
+                        <span class="text-xl font-bold text-slate-300 block mt-2">ккал</span>
+                    </div>
+
+                    <div class="border-t border-white/10 pt-4 space-y-2">
+                        <p class="text-xs text-slate-400">
+                            Увімкніть усі інгредієнти, щоб побачити справжній обсяг калорійності цього салату.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MINDSET TWEAKS -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-6">
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-brand-100 text-brand-800">Філософія схуднення</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                    3 Психологічні Зсуви, які змінять усе
+                </h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Схуднення починається з голови. Якщо ви звикли ставитися до дієти за принципом «все або нічого», ви приречені на постійні коливання ваги. Настав час змінити парадигму.
+                </p>
+
+                <!-- Accordion/Tweak Cards -->
+                <div class="space-y-4">
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex gap-4 items-start">
+                        <div class="p-2.5 bg-emerald-50 text-emerald-600 rounded-xl">
+                            <i data-lucide="shield-alert" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Припиніть грати роль жертви</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                Не шукайте виправдань на кшталт «у мене немає генетики» чи «широка кістка». Просто почніть діяти. Крок за кроком, навіть маленькі зміни дають фантастичний накопичувальний ефект.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex gap-4 items-start">
+                        <div class="p-2.5 bg-emerald-50 text-emerald-600 rounded-xl">
+                            <i data-lucide="percent" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Перфекціонізм — ваш найгірший ворог</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                Ви не професійний спортсмен на підготовці. Не намагайтеся зробити все ідеально з першого дня. 80% дотримання плану краще, ніж 100% прагнення до ідеалу, що завершується зривом на 3-й день.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex gap-4 items-start">
+                        <div class="p-2.5 bg-emerald-50 text-emerald-600 rounded-xl">
+                            <i data-lucide="flame" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Не чекайте на мотивацію</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                Мотивація приходить і йде. Вона зникає, коли ви втомлені або переживаєте стрес на роботі. Покладайтеся на дисципліну та заздалегідь побудовані прості звички, а не на емоційні пориви.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visual Metaphor Column (SideWalk Analogy) -->
+            <div class="bg-gradient-to-br from-brand-100 to-emerald-50 rounded-3xl p-8 space-y-6 border border-brand-100/50 text-center relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-brand-rose/20 blur-3xl"></div>
+                
+                <i data-lucide="footprints" class="w-16 h-16 text-brand-600 mx-auto animate-bounce"></i>
+                <h3 class="text-2xl font-extrabold text-slate-900">Аналогія з тротуаром</h3>
+                
+                <p class="text-slate-700 text-sm leading-relaxed max-w-md mx-auto">
+                    «Якщо ви випадково спіткнулися та впали під час прогулянки містом, чи залишитеся ви лежати на брудному тротуарі до самого вечора, тому що ви зазнали невдачі у ходінні? <strong class="text-brand-800">Ні, це було б дивно.</strong> Ви встанете, обтруситеся та підете далі».
+                </p>
+
+                <div class="p-4 bg-white rounded-2xl border border-brand-100 max-w-sm mx-auto text-xs text-slate-600">
+                    Ставтеся до незапланованого прийому їжі чи шматочка торта так само. Це просто крихітне падіння. Вставайте та продовжуйте свій шлях далі!
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER WITH QUICK ADVICE -->
+    <footer class="bg-slate-950 text-white py-12 mt-16 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-4">
+                <h3 class="text-xl font-bold text-brand-rose">Схуднення на все життя</h3>
+                <p class="text-sm text-slate-400 max-w-md leading-relaxed">
+                    Пам'ятайте: будь-яка нова справа здається важкою у перші тижні. Проте практика формує звичку. Через 3-4 тижні щоденний трекінг займатиме у вас не більше 5 хвилин на добу.
+                </p>
+                <p class="text-xs text-slate-500">
+                    &copy; 2026 Розумне Схуднення. Всі права захищені. Працюйте над здоров'ям з розумом.
+                </p>
+            </div>
+            
+            <div class="space-y-4 md:text-right">
+                <h4 class="font-semibold text-white">Швидкі посилання для старту</h4>
+                <div class="flex flex-wrap gap-3 md:justify-end">
+                    <span class="px-3 py-1 bg-white/5 rounded-lg text-xs text-slate-300">#БезДієт</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-lg text-xs text-slate-300">#Метаболізм</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-lg text-xs text-slate-300">#ГнучкийТрекінг</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-lg text-xs text-slate-300">#БілокКоролева</span>
+                </div>
+                <div class="pt-2">
+                    <p class="text-xs text-slate-400">Створено на базі перевірених підходів фітнес-експертів.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPTS -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // 1. Weekly Calorie Budget Logic
+        const inputMaintenance = document.getElementById('input-maintenance');
+        const inputDeficit = document.getElementById('input-deficit');
+        const chkWeekendFlex = document.getElementById('chk-weekend-flex');
+
+        const lblMaintenance = document.getElementById('lbl-maintenance');
+        const lblDeficit = document.getElementById('lbl-deficit');
+        
+        const valWeeklyTotal = document.getElementById('val-weekly-total');
+        const valDailyAvg = document.getElementById('val-daily-avg');
+        const valWeekdayCal = document.getElementById('val-weekday-cal');
+        const valWeekendCal = document.getElementById('val-weekend-cal');
+
+        const barWeekday = document.getElementById('bar-weekday');
+        const barWeekend = document.getElementById('bar-weekend');
+
+        function updateCalculator() {
+            const maintenance = parseInt(inputMaintenance.value);
+            const deficit = parseInt(inputDeficit.value);
+            const hasFlex = chkWeekendFlex.checked;
+
+            lblMaintenance.textContent = maintenance;
+            lblDeficit.textContent = deficit;
+
+            const targetDaily = maintenance - deficit;
+            const targetWeekly = targetDaily * 7;
+
+            valWeeklyTotal.textContent = targetWeekly;
+            valDailyAvg.textContent = targetDaily;
+
+            let weekdayCal = targetDaily;
+            let weekendCal = targetDaily;
+
+            if (hasFlex) {
+                // We reduce 100 kcal per day during weekdays (Mon-Fri) 
+                // and transfer that saved 500 kcal to Sat-Sun (250 kcal extra each day)
+                weekdayCal = targetDaily - 100;
+                weekendCal = targetDaily + 250;
+            }
+
+            valWeekdayCal.textContent = weekdayCal;
+            valWeekendCal.textContent = weekendCal;
+
+            // Update progress bars widths visually (relative to maintenance level)
+            const maxValForBar = Math.max(maintenance, weekendCal, weekdayCal);
+            const weekdayPct = (weekdayCal / maxValForBar) * 100;
+            const weekendPct = (weekendCal / maxValForBar) * 100;
+
+            barWeekday.style.width = `${weekdayPct}%`;
+            barWeekend.style.width = `${weekendPct}%`;
+        }
+
+        inputMaintenance.addEventListener('input', updateCalculator);
+        inputDeficit.addEventListener('input', updateCalculator);
+        chkWeekendFlex.addEventListener('change', updateCalculator);
+
+        // Run once on load
+        updateCalculator();
+
+
+        // 2. Hidden Calories Visualizer Logic
+        let selectedCalories = 0;
+        const txtTotalPlateCal = document.getElementById('txt-total-plate-cal');
+
+        function toggleIngredient(element, calories) {
+            const dot = element.querySelector('.dot');
+            const isActive = element.classList.contains('border-emerald-500') || element.classList.contains('border-rose-500');
+
+            if (isActive) {
+                // Deactivate
+                element.classList.remove('border-emerald-500', 'bg-emerald-50/20', 'border-rose-500', 'bg-rose-50/20');
+                element.classList.add('border-slate-100', 'bg-slate-50/50');
+                dot.classList.add('opacity-0');
+                selectedCalories -= calories;
+            } else {
+                // Activate
+                element.classList.remove('border-slate-100', 'bg-slate-50/50');
+                if (element.innerHTML.includes('Пастка')) {
+                    element.classList.add('border-rose-500', 'bg-rose-50/20');
+                } else {
+                    element.classList.add('border-emerald-500', 'bg-emerald-50/20');
+                }
+                dot.classList.remove('opacity-0');
+                selectedCalories += calories;
+            }
+
+            // Animate counter change
+            animateCounter(selectedCalories);
+        }
+
+        function animateCounter(targetValue) {
+            const currentValue = parseInt(txtTotalPlateCal.textContent);
+            const duration = 300; // ms
+            const startTime = performance.now();
+
+            function update(now) {
+                const elapsed = now - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const currentVal = Math.floor(currentValue + (targetValue - currentValue) * progress);
+                txtTotalPlateCal.textContent = currentVal;
+
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                }
+            }
+            requestAnimationFrame(update);
+        }
+
+        // 3. Tab Switch Logic for Stage Deep Dives
+        function switchStageTab(stageId) {
+            // Hide all tab contents
+            for (let i = 1; i <= 4; i++) {
+                document.getElementById(`tab-content-${i}`).classList.add('hidden');
+                
+                // Reset button styles to default inactive state
+                const btn = document.getElementById(`tab-btn-${i}`);
+                btn.className = "flex-1 min-w-[150px] px-4 py-3 rounded-xl font-bold text-sm text-left transition-all duration-200 border border-transparent bg-slate-50 text-slate-600 hover:bg-slate-100 flex items-center gap-2";
+                
+                // Reset inner counter badge style
+                const badge = btn.querySelector('span');
+                badge.className = "w-6 h-6 rounded-full bg-slate-400 text-white flex items-center justify-center text-xs";
+            }
+
+            // Show active tab content
+            document.getElementById(`tab-content-${stageId}`).classList.remove('hidden');
+
+            // Apply active styles to clicked tab
+            const activeBtn = document.getElementById(`tab-btn-${stageId}`);
+            const activeBadge = activeBtn.querySelector('span');
+
+            if (stageId === 1) {
+                activeBtn.className = "flex-1 min-w-[150px] px-4 py-3 rounded-xl font-bold text-sm text-left transition-all duration-200 border-2 border-sky-100 bg-sky-50/50 text-sky-800 flex items-center gap-2 shadow-sm";
+                activeBadge.className = "w-6 h-6 rounded-full bg-sky-500 text-white flex items-center justify-center text-xs";
+            } else if (stageId === 2) {
+                activeBtn.className = "flex-1 min-w-[150px] px-4 py-3 rounded-xl font-bold text-sm text-left transition-all duration-200 border-2 border-brand-100 bg-brand-50 text-brand-800 flex items-center gap-2 shadow-sm";
+                activeBadge.className = "w-6 h-6 rounded-full bg-brand-500 text-white flex items-center justify-center text-xs";
+            } else if (stageId === 3) {
+                activeBtn.className = "flex-1 min-w-[150px] px-4 py-3 rounded-xl font-bold text-sm text-left transition-all duration-200 border-2 border-amber-100 bg-amber-50 text-amber-800 flex items-center gap-2 shadow-sm";
+                activeBadge.className = "w-6 h-6 rounded-full bg-amber-500 text-white flex items-center justify-center text-xs";
+            } else if (stageId === 4) {
+                activeBtn.className = "flex-1 min-w-[150px] px-4 py-3 rounded-xl font-bold text-sm text-left transition-all duration-200 border-2 border-rose-100 bg-rose-50 text-rose-800 flex items-center gap-2 shadow-sm";
+                activeBadge.className = "w-6 h-6 rounded-full bg-rose-500 text-white flex items-center justify-center text-xs";
+            }
+        }
+
+        // 4. BMR & TDEE Calculator Logic
+        let calculatedTdee = 2288;
+        let calculatedDeficit = 350;
+
+        function calculateCalories() {
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+            const weight = parseFloat(document.getElementById('calc-weight').value);
+            const height = parseFloat(document.getElementById('calc-height').value);
+            const age = parseFloat(document.getElementById('calc-age').value);
+            const activity = parseFloat(document.getElementById('calc-activity').value);
+
+            if (!weight || !height || !age) return;
+
+            // Mifflin-St Jeor Formula
+            let bmr = 0;
+            if (gender === 'male') {
+                bmr = (10 * weight) + (6.25 * height) - (5 * age) + 5;
+            } else {
+                bmr = (10 * weight) + (6.25 * height) - (5 * age) - 161;
+            }
+
+            const tdee = bmr * activity;
+            
+            // Deficit options
+            const mildLoss = tdee * 0.85; // 15% deficit
+            const standardLoss = tdee * 0.80; // 20% deficit
+
+            // Update UI elements
+            document.getElementById('res-bmr').textContent = Math.round(bmr);
+            document.getElementById('res-tdee').textContent = Math.round(tdee);
+            document.getElementById('res-loss-mild').textContent = Math.round(mildLoss);
+            document.getElementById('res-loss-standard').textContent = Math.round(standardLoss);
+
+            // Store internally to apply
+            calculatedTdee = Math.round(tdee);
+            calculatedDeficit = Math.round(tdee - mildLoss); // Use mild (15%) as the standard recommendation
+        }
+
+        function applyToPlanner() {
+            // Trigger calculation in case they updated fields but didn't click "Calculate"
+            calculateCalories();
+
+            // Set inputs on the weekly planner
+            inputMaintenance.value = calculatedTdee;
+            inputDeficit.value = calculatedDeficit;
+
+            // Trigger the UI updates of the planner
+            updateCalculator();
+
+            // Scroll down to planning section smoothly
+            document.getElementById('input-maintenance').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Run once initially to sync
+        calculateCalories();
+    </script>
+</body>
+</html>
